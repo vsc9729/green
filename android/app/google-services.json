@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "800870233374",
+    "project_id": "green-cd2a2",
+    "storage_bucket": "green-cd2a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800870233374:android:ff93450dfe9efcfea2c50f",
+        "android_client_info": {
+          "package_name": "com.uiet.greem.green"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800870233374-i60m43lfjuolfr6lp6ftueu0u2jsesh2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrTZp4mHxnmtdzfMBaYnYs265w30SZa9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800870233374-i60m43lfjuolfr6lp6ftueu0u2jsesh2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
