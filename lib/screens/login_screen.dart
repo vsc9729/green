@@ -1,14 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flash_chat/components/rounded_button.dart';
-import 'package:flash_chat/screens/chat_screen.dart';
-import 'package:flash_chat/screens/people_screen.dart';
-import 'package:flash_chat/screens/registration_screen.dart';
-import 'package:flash_chat/screens/welcome_screen.dart';
+import 'package:green/components/rounded_button.dart';
+import 'package:green/screens/chat_screen.dart';
+import 'package:green/screens/people_screen.dart';
+import 'package:green/screens/registration_screen.dart';
+import 'package:green/screens/welcome_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flash_chat/constants.dart';
+import 'package:green/constants.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
-import 'package:flash_chat/animations/fade_animation.dart';
+import 'package:green/animations/fade_animation.dart';
 class LoginScreen extends StatefulWidget {
   static const String id = "login_screen";
   @override

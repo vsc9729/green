@@ -1,14 +1,14 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flash_chat/components/rounded_button.dart';
-import 'package:flash_chat/service/encryption_decryption_service.dart';
+import 'package:green/components/rounded_button.dart';
+import 'package:green/service/encryption_decryption_service.dart';
 import 'package:flutter/material.dart';
-import 'package:flash_chat/constants.dart';
+import 'package:green/constants.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flash_chat/screens/add_user_screen.dart';
-import 'package:flash_chat/widgets/users_list.dart';
+import 'package:green/screens/add_user_screen.dart';
+import 'package:green/widgets/users_list.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
-import 'package:flash_chat/widgets/user_tile.dart';
+import 'package:green/widgets/user_tile.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -48,8 +48,6 @@ class _PeopleScreenState extends State<PeopleScreen> {
     // TODO: implement initState
     super.initState();
     getCurrentUser();
-    print(GetStorage().read("vishalm@gmail.com_total_messages"));
-    print(GetStorage().read("vishalm@gmail.com_positive_messages"));
   }
 
   void getCurrentUser() async {

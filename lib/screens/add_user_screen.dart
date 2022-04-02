@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flash_chat/screens/people_screen.dart';
+import 'package:green/screens/people_screen.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
-import 'package:flash_chat/service/encryption_decryption_service.dart';
+import 'package:green/service/encryption_decryption_service.dart';
 
 String email;
 class AddUserScreen extends StatelessWidget {

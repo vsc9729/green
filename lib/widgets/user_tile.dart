@@ -1,4 +1,4 @@
-import 'package:flash_chat/screens/chat_screen.dart';
+import 'package:green/screens/chat_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'users_list.dart';

@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flash_chat/widgets/user_tile.dart';
+import 'package:green/widgets/user_tile.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:math' as math;
-import 'package:flash_chat/widgets/user_tile.dart';
+import 'package:green/widgets/user_tile.dart';
 
 final _firestore = FirebaseFirestore.instance;
 

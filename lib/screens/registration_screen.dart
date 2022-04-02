@@ -1,13 +1,13 @@
-import 'package:flash_chat/components/rounded_button.dart';
-import 'package:flash_chat/screens/login_screen.dart';
-import 'package:flash_chat/screens/people_screen.dart';
+import 'package:green/components/rounded_button.dart';
+import 'package:green/screens/login_screen.dart';
+import 'package:green/screens/people_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flash_chat/constants.dart';
+import 'package:green/constants.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'chat_screen.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flash_chat/animations/fade_animation.dart';
+import 'package:green/animations/fade_animation.dart';
 final _firestore = FirebaseFirestore.instance;
 class RegistrationScreen extends StatefulWidget {
   static const String id = 'registration_screen';

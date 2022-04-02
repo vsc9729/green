@@ -1,10 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flash_chat/constants.dart';
+import 'package:green/constants.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:encrypt/encrypt.dart';
-import 'package:flash_chat/service/encryption_decryption_service.dart';
+import 'package:green/service/encryption_decryption_service.dart';
 import 'package:get_storage/get_storage.dart';
 import 'dart:math' as math;
 import 'package:http/http.dart' as http;
@@ -102,9 +102,11 @@ class _ChatScreenState extends State<ChatScreen>{
                   FlatButton(
                     onPressed: () async{
                       messageTextController.clear();
-                      String url = "http://ec2-3-111-52-70.ap-south-1.compute.amazonaws.com/predict?data=$messageText";
+                      String url = "https://sour-duck-19.loca.lt/predict?data=$messageText";
+                      print(messageText);
                       var response = await http.get(Uri.parse(url));
                       String positive = jsonDecode(response.body)["result"];
+                      print(positive);
                       GetStorage().write("${widget.email}_total_messages",GetStorage().hasData("${widget.email}_total_messages")?GetStorage().read("${widget.email}_total_messages")+1:1);
                       if(positive == "1") {
                         GetStorage().write(
